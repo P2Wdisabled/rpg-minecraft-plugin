@@ -68,8 +68,7 @@ Chaque palier de tier déverrouille des bonus impressionnants :
 | Tier 1   | 100,000       | +1000     | +500         | +3000    | +2000      | +150               |
 | Tier 2   | 500,000       | +2000     | +1500        | +5000    | +5000      | +200               |
 | Tier 3   | 1,000,000     | +4000     | +3000        | +6000    | +8000      | +300               |
-
-(... **compléter pour les autres tiers si besoin**)
+...
 
 ### 🐉 **Système de monstres**
 - Gestion avancée des boss, mini-boss et mobs avec des capacités uniques.
@@ -85,7 +84,7 @@ Chaque palier de tier déverrouille des bonus impressionnants :
     - 2% : Objet corrompu
     - 15% : Dague empoisonnée
 
-(... **compléter avec les autres monstres si besoin**)
+...
 
 ### 🛠️ **Système d’objets et équipements**
 Exemple d'objets :  
@@ -96,7 +95,7 @@ Exemple d'objets :
     - Défense : +10,000
   - **Effet** : Augmente la défense contre les dégâts physiques de 10%.
 
-(... **compléter avec les autres objets si besoin**)
+...
 
 ---
 
