@@ -20,7 +20,7 @@ public class ArmorManager {
 
     public CustomArmor getArmorFromItem(ItemStack item) {
         if (item == null || !item.hasItemMeta() || !item.getItemMeta().hasDisplayName()) return null;
-        String itemName = ChatColor.stripColor(item.getItemMeta().getDisplayName()).toLowerCase();
+        String itemName = ChatColor.stripColor(item.getItemMeta().displayName().toString()).toLowerCase();
         return registeredArmors.get(itemName);
     }
 }
