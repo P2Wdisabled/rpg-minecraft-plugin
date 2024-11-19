@@ -1,6 +1,5 @@
 package fr.P2Wdisabled.rpgplugin.skills;
 
-import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
 public abstract class CustomSkill implements Listener {
@@ -26,9 +25,6 @@ public abstract class CustomSkill implements Listener {
 
     // Méthode abstraite pour obtenir les raretés possibles (si nécessaire)
     public abstract String[] getPossibleRarities();
-
-    // Méthode abstraite pour activer la compétence (si nécessaire)
-    public abstract void activateSkill(Player player);
 
     // Getters pour les propriétés
     public String getName() {
