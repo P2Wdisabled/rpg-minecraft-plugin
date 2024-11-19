@@ -8,6 +8,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerItemDamageEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
@@ -69,6 +70,18 @@ public class DoranShield extends CustomWeapon implements Listener {
         };
     }
 
+    @SuppressWarnings("deprecation")
+	@EventHandler
+    public void playerDamaged(EntityDamageEvent event) {
+    	if(event.getEntity() instanceof Player && event.getCause() == EntityDamageEvent.DamageCause.PROJECTILE) {
+    		Player player = (Player) event.getEntity();
+    		ItemStack itemInHand = player.getInventory().getItemInOffHand();
+    		if (itemInHand!= null && itemInHand.getType() == Material.SHIELD && itemInHand.getItemMeta().getDisplayName().equals("Doran's Shield")) {
+				event.setCancelled(true);
+				itemInHand.setDurability((short) (itemInHand.getDurability() - 10));
+			}
+    	}
+    }
     @Override
     public String[] getPossibleRarities() {
         return new String[]{"Mythic"};
