@@ -1,0 +1,6 @@
+mysql:
+  host: localhost
+  port: 3306
+  database: votre_base_de_donnees
+  username: votre_nom_utilisateur
+  password: votre_mot_de_passe

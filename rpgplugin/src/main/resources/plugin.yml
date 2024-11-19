@@ -1,0 +1,38 @@
+name: RPGPlugin
+version: 1.0
+main: fr.P2Wdisabled.rpgplugin.RPGPlugin
+api-version: 1.18
+author: VotreNom
+description: Plugin Minecraft RPG
+
+commands:
+  stats:
+    description: Gérer vos points de statistiques.
+    usage: /stats [show|<statistique> <points>]
+  addxp:
+    description: Ajouter de l'XP pour les tests.
+    usage: /addxp <amount>
+  spawnboss:
+    description: Invoquer un Boss pour les tests.
+    usage: /spawnboss
+  spawnminiboss:
+    description: Invoquer un Mini-Boss pour les tests.
+    usage: /spawnminiboss
+  givebeta:
+    description: Donne le titre Beta à un joueur.
+    usage: /givebeta <player>
+  showtitle:
+    description: Affiche le titre d'un joueur.
+    usage: /showtitle [player]
+  spawnmonster:
+    description: Spawner un monstre personnalisé.
+    usage: /spawnmonster
+    permission: rpgplugin.spawnmonster
+
+permissions:
+  rpgplugin.givebeta:
+    description: Permission pour donner le titre Beta.
+    default: op
+  rpgplugin.spawnmonster:
+    description: Permet de spawner un monstre personnalisé.
+	default: op
